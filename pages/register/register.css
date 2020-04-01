@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+}
+.form-horizontal div.form-group {
+    margin: 20px 10px 30px 0px;
+  }
+  
+  .thumbnail img {
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+
+  .thumbnail {
+    margin-top: 60px;
+    border-radius: 10px;
+  }
+
+  .thumbnail h3 {
+    text-align: center;
+  }
+
+  .btn1 {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .row .form-group div.checkbox{
+    margin-top: -10px;
+  }
+  .btn1 button {
+    line-height: 30px;
+    font-size: 18px;
+    width: 300px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+  }
+  .row #validate label.red{
+    color: red;
+    position: absolute;
+    padding-top: 5px;
+  }

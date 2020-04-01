@@ -1,0 +1,56 @@
+.form-horizontal div.form-group {
+    margin: 20px 10px 0px 0px;
+}
+html,body{
+    height: 100%;
+}
+.thumbnail img {
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.thumbnail {
+    margin-top: 60px;
+    border-radius: 10px ;
+}
+
+.thumbnail h3 {
+    text-align: center;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.btn1 button {
+    width: 300px;
+    margin: 30px 0;
+}
+.form-control{
+    margin-bottom: 10px ;
+}
+.row .form-group div.checkbox{
+    margin-top: -10px;
+  }
+  .btn1 button {
+    line-height: 30px;
+    font-size: 18px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .row #validate label.red{
+    color: red;
+    position: absolute;
+    margin-top: -7px;
+  }
