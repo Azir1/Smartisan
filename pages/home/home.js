@@ -1,7 +1,9 @@
 
 $(function(){
     // 购物车
-    $('')
+    $('.total button').click(()=>{
+        location.href = '../shoppingcart/shoppingcart.html'
+    })
     // 登录，注册
     var login = document.querySelector('.login')
     var register = document.querySelector('.register')

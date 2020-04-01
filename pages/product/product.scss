@@ -111,6 +111,7 @@ section{
         padding: 0 20px;
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
         .img-list{
             height: 600px;
             display: flex;
@@ -191,7 +192,7 @@ section{
 // 购物车菜单
 
 .bottom{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: #fafafa;
@@ -230,6 +231,8 @@ section{
                 border: 1px solid #d6d6d6;
                 border-radius: 4px;
                 margin-left: 20px;
+                outline: none;
+                // outline-color: rgba(255,255,255,0);
             }
             button:nth-of-type(2){
                 width: 84px;
@@ -239,13 +242,80 @@ section{
                 border: 1px solid #3d60dc;
                 border-radius: 4px;
                 margin-left: 20px;
+                outline: none;
             }
         }
     }
 }
 
 
+// 公共导航
+footer{
+    .wrap{
+        width: 960px;
+        margin:0px auto;
+        background: #fff;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #d6d6d6;
+        .list{
+            display: flex;
+            flex-flow: row;
+            width: 420px;
+            justify-content: space-between;
+            li:first-child{
+                margin-bottom: 10px;
+            }
+            li{
+                margin-bottom: 5px;
+                a{
+                    color: #666;
 
+                }
+            }
+            li:hover a{
+                text-decoration: none;
+                color: #3d60dc;
+            }
+        }
+        .connect{
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            span:nth-of-type(1){
+                color: #3d60dc;
+                font: 18px/40px '';
+                font-weight: bold;
+            }
+            span:nth-of-type(2),
+            span:nth-of-type(3){
+                color: #666;
+                font-size: 12px;
+            }
+            span:nth-of-type(4){
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 4px;
+                padding: 3px 8px;
+                margin-top: 10px;
+                color: #5d85e5;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color:#efefef;
+                }
+            }
+        }
+    }
+    .qua{
+        width: 960px;
+        margin:0px auto;
+        background: #fff;
+        padding: 20px 20px 60px 20px;
+    }
+
+}
 
 
 

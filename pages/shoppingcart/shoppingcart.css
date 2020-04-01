@@ -116,6 +116,7 @@
 section {
   background: #ededed;
   width: 100%;
+  padding-bottom: 30px;
 }
 section .em {
   height: 30px;
@@ -268,6 +269,69 @@ section .wrap .account button {
   border: 1px solid #3d60dc;
   border-radius: 4px;
   margin-left: 20px;
+}
+
+footer .wrap {
+  width: 960px;
+  margin: 0px auto;
+  background: #fff;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d6;
+}
+footer .wrap .list {
+  display: flex;
+  flex-flow: row;
+  width: 420px;
+  justify-content: space-between;
+}
+footer .wrap .list li:first-child {
+  margin-bottom: 10px;
+}
+footer .wrap .list li {
+  margin-bottom: 5px;
+}
+footer .wrap .list li a {
+  color: #666;
+}
+footer .wrap .list li:hover a {
+  text-decoration: none;
+  color: #3d60dc;
+}
+footer .wrap .connect {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+footer .wrap .connect span:nth-of-type(1) {
+  color: #3d60dc;
+  font: 18px/40px "";
+  font-weight: bold;
+}
+footer .wrap .connect span:nth-of-type(2),
+footer .wrap .connect span:nth-of-type(3) {
+  color: #666;
+  font-size: 12px;
+}
+footer .wrap .connect span:nth-of-type(4) {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin-top: 10px;
+  color: #5d85e5;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer .wrap .connect span:nth-of-type(4):hover {
+  background-color: #efefef;
+}
+footer .qua {
+  width: 960px;
+  margin: 0px auto;
+  background: #fff;
+  padding: 20px 20px 60px 20px;
 }
 
 /*# sourceMappingURL=shoppingcart.css.map */

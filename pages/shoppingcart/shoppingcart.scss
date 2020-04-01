@@ -100,6 +100,7 @@
 section{
     background: #ededed;
     width: 100%;
+    padding-bottom: 30px;
     .em{
         height: 30px;
     }
@@ -110,6 +111,7 @@ section{
         border: 1px solid #ededed;
         border-radius: 10px;
         padding: 0 20px;
+     
         h3{
             height: 44px;
             margin: 0;
@@ -258,6 +260,73 @@ section{
     }
 }
 
+// 公共导航
+footer{
+    .wrap{
+        width: 960px;
+        margin:0px auto;
+        background: #fff;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #d6d6d6;
+        .list{
+            display: flex;
+            flex-flow: row;
+            width: 420px;
+            justify-content: space-between;
+            li:first-child{
+                margin-bottom: 10px;
+            }
+            li{
+                margin-bottom: 5px;
+                a{
+                    color: #666;
+
+                }
+            }
+            li:hover a{
+                text-decoration: none;
+                color: #3d60dc;
+            }
+        }
+        .connect{
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            span:nth-of-type(1){
+                color: #3d60dc;
+                font: 18px/40px '';
+                font-weight: bold;
+            }
+            span:nth-of-type(2),
+            span:nth-of-type(3){
+                color: #666;
+                font-size: 12px;
+            }
+            span:nth-of-type(4){
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 4px;
+                padding: 3px 8px;
+                margin-top: 10px;
+                color: #5d85e5;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color:#efefef;
+                }
+            }
+        }
+    }
+    .qua{
+        width: 960px;
+        margin:0px auto;
+        background: #fff;
+        padding: 20px 20px 60px 20px;
+    }
+
+}
 
 
 
