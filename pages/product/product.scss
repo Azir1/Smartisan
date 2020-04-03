@@ -1,104 +1,7 @@
-/* 公共显示区域 */
-.wrapper {
-    width: 1220px;
-    margin:auto;
-}
-/* 导航菜单 */
-.navbar {
-    display: flex;
-    border-radius: 0;
-    position: relative;
-    margin-bottom: 0;
-    .topbar .list {
-        display: flex;
-        color: gray;
-        margin-bottom: 0;
-        justify-content: space-evenly;
-        padding: 0 120px 0 120px;
-        li {
-            padding: 8px;
-            position: relative;
-            &:hover{
-                cursor: pointer;
-                color: #ffffff;
-            }
-            &.active{
-                color: #ffffff;
-            }
-        }
-    }
-    /* 登录、购物车 */
-    .info {
-        z-index: 1;
-        color: #333333;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        .left{
-            display: inline-block;
-            height: 45px;
-            position: relative;
-            z-index: 1;
-            .login{width: 20px;height: 20px; background: url(../../img/icon-bg/user.png) no-repeat;background-position: 0 0; display: inline-block;background-size: 20px 20px;margin-right: 20px;margin-top: 50%;transform: translateY(-50%);}
-            &:hover .logout{
-                display: block;
-            }
-        }
-        .logout{
-            height: 375px;background: #666;position: absolute;    background: #fff;
-            border: 1px solid #d6d6d6;
-            border-radius: 8px;
-            -webkit-box-shadow: 0 20px 40px rgba(0,0,0,.15);
-            box-shadow: 0 20px 40px rgba(0,0,0,.15);
-            width: 168px;
-            padding-top: 18px;
-            left: -130px;top: 40px;
-            /* transition: all ease .5s; */
-            /* opacity: 0; */
-            display: none;
-            margin-top: 5px;
-            z-index: 10;
-            .user{
-                display: flex;
-                flex-flow: column;
-                align-items: center;
-                img{
-                    height: 50px;
-                    width: 50px;
-                    border-radius: 50%;
-                }
-                span{
-                    padding: 5px 0 15px 0;
-                }
-            }
-            ul{
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-                align-items: center;
-                li{
-                    border-top: 1px solid #d6d6d6;
-                    a{
-                        display:block;
-                        width: 164px;
-                        text-align: center;
-                        line-height: 43px;
-                        color: #666;
-                        &:hover{
-                            background: #efefef;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 // 商品详情
 section{
     background: #ededed;
-    width: 100%;
     .em{
         height: 30px;
     }
@@ -190,7 +93,6 @@ section{
 
 
 // 购物车菜单
-
 .bottom{
     position: fixed;
     bottom: 0;
@@ -249,73 +151,7 @@ section{
 }
 
 
-// 公共导航
-footer{
-    .wrap{
-        width: 960px;
-        margin:0px auto;
-        background: #fff;
-        padding: 30px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #d6d6d6;
-        .list{
-            display: flex;
-            flex-flow: row;
-            width: 420px;
-            justify-content: space-between;
-            li:first-child{
-                margin-bottom: 10px;
-            }
-            li{
-                margin-bottom: 5px;
-                a{
-                    color: #666;
 
-                }
-            }
-            li:hover a{
-                text-decoration: none;
-                color: #3d60dc;
-            }
-        }
-        .connect{
-            display: flex;
-            flex-flow: column;
-            align-items: flex-end;
-            span:nth-of-type(1){
-                color: #3d60dc;
-                font: 18px/40px '';
-                font-weight: bold;
-            }
-            span:nth-of-type(2),
-            span:nth-of-type(3){
-                color: #666;
-                font-size: 12px;
-            }
-            span:nth-of-type(4){
-                border: 1px solid rgba(0,0,0,.15);
-                border-radius: 4px;
-                padding: 3px 8px;
-                margin-top: 10px;
-                color: #5d85e5;
-                font-weight: bold;
-                cursor: pointer;
-                &:hover{
-                    background-color:#efefef;
-                }
-            }
-        }
-    }
-    .qua{
-        width: 960px;
-        margin:0px auto;
-        background: #fff;
-        padding: 20px 20px 60px 20px;
-    }
-
-}
 
 
 

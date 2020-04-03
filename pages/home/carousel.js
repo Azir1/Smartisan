@@ -33,7 +33,7 @@ $(function(){
         }
         // 自动播放
         timerId = setInterval(()=>{
-            console.log(this);
+            // console.log(this);
             this.right()
         },2000)
         // 鼠标移入
