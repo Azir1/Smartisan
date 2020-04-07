@@ -24,10 +24,7 @@ $(function(){
         location.href = '../shoppingcart/shoppingcart.html'
     })
 
-    // 导航栏点击
-    $('.navbar .list li').eq(0).click(()=>{
-        location.replace = 'page/home/home.html'
-    })
+    
 
 
 

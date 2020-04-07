@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>详情</title>
     <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="./product.css">
 </head>
@@ -62,6 +63,7 @@
     <section>
         <div class="em"></div>
         <div class="wrap">
+            
             <!-- <ul class="img-list">
                 <li>
                     <img src="https://resource.smartisan.com/resource/2d5bac538fef9800aa5cd8420cfcdc12.jpg?x-oss-process=image/resize,w_64/format,webp"
@@ -99,7 +101,11 @@
                 </li>
                 <li>
                     <h4>数量选择</h4>
-                    <span>1080P</span>
+                    <div>
+                        <span class="reduce"></span>
+                        <span class="num">2</span>
+                        <span class="plus"></span>
+                    </div>
                 </li>
                 <li>
                     <h4>服务说明</h4>
@@ -108,12 +114,22 @@
             </ul> -->
         </div>
         <div class='em'></div>
+        <div class="main wrapper">
+            <div class="card">
+                <h3>产品信息</h3>
+                <ul>
+                    <!-- <li>
+                        <img src="https://resource.smartisan.com/resource/aed26aa35a2576f0c704975ed87e01af.jpg" alt="" style="width: 960px">
+                    </li> -->
+                </ul>
+            </div>
+            <div class="em"></div>
+        </div>
     </section>
-
-
+    
     <!-- 购物车结算 -->
     <div class="bottom">
-        <div class="wrap">
+        <!-- <div class="wrap">
             <div>
                 您已选择了
                 <div>
@@ -124,10 +140,10 @@
             </div>
             <div>
                 <p class="price">￥1499.00</p>
-                <button>现在购买</button>
-                <button class="addCart">加入购物车</button>
+                <button class='btn btn-default'>现在购买</button>
+                <button class="addCart btn btn-default">加入购物车</button>
             </div>
-        </div>
+        </div> -->
     </div>
     <footer>
         <div class="wrap">
@@ -170,10 +186,13 @@
     </footer>
 </body>
 <script src="../../js/jquery.min.js"></script>
+<script src="../../js/layer/layer.js"></script>
 <script src="../../js/cookie.js"></script>
+<script src="../../js/nav.js"></script>
 <script src="./product.js"></script>
+
 <script>
-    /* 
+    /*
     商品信息应该从点击列表页，所点击的商品信息的id
     在地址栏传入id = 1 就行了，
     给查看详情传链接的时候，应该在链接后面传入id等于当前商品的id
@@ -206,7 +225,8 @@
         使用本地存储 localstroage 来存购物车数据
             本地存储要存入字符串
                 商品id，用户，数量 == 组合成一个对象，将对象转成json字符串
-        
+
     */
 </script>
+
 </html>

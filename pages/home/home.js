@@ -1,4 +1,9 @@
-$(function(){
+$(function () {
+    // 导航栏点击
+    $('.navbar .list li').eq(0).click(() => {
+        location.href = '../home/home.html'
+    })
+
     $.ajax({
         type: "get",
         url: "../../server/home.php",
@@ -6,9 +11,9 @@ $(function(){
         dataType: "json",
         success: function (response) {
             console.log(response)
-            var len = response.length 
+            var len = response.length
             for (let i = 0; i < len; i++) {
-                var li =$(`
+                var li = $(`
                 <li index=${response[i].id}>
                     <a href="javascript:;">
                         <img src="${response[i].imgpath}"
@@ -25,14 +30,44 @@ $(function(){
                 $('.card ul').append(li)
             }
             // 点击进入详情页
-            $('.card li').click(function(){
+            $('.card li').click(function () {
                 var id = $(this).attr('index')
                 console.log(id)
-                location.href = '../product/product.html'+'?id='+id
+                location.href = '../product/product.html' + '?id=' + id
             })
+            // 滚动导航栏固定
+            // 滚动条事件节流
+
+
+            window.onscroll = throttle(fn, ['a', 'b', 'c', 'd'])
+            function fn(args) {
+                if ($(document).scrollTop() >= 100) {
+                    $('header').addClass('navbar-fixed-top')
+                } else {
+                    $('header').removeClass('navbar-fixed-top')
+                }
+            }
+            // 节流
+            function throttle(fn, ...args) {
+                // 通过闭包保存一个标记flag
+                let flag = true
+                return function () {
+                    if (!flag) {
+                        return
+                    }
+                    flag = false
+                    setTimeout(() => {
+                        fn.apply(this, args)
+                        flag = true
+                    }, 10)
+                }
+            }
+            // $(document).scroll(function () {
+                
+            // })
         }
     });
-    
+
 
 
 

@@ -13,7 +13,6 @@ section{
         border: 1px solid #ededed;
         border-radius: 10px;
         padding: 0 20px;
-     
         h3{
             height: 44px;
             margin: 0;
@@ -23,107 +22,96 @@ section{
         /* 表头 */
         .carttop{
             height: 30px;
-            padding: 0 20px;
-            margin-bottom: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             background: #d6d6d6;
             color: #333333;
             opacity: .5;
-            li:nth-of-type(1){
-                width: 400px;
-            }
-            li{
-                color: #666;
-                font-size: 14px;
-            }
         }
         /* 商品 */
         .product{
-            li{
-                border-bottom: 1px solid #ededed;
-                display: flex;
-                align-items: center;
-                padding: 20px 0 20px 0;
-                div{
-                    width: 400px;
-                    display: flex;
-                    align-items: center;
-                    img{
-                        height: 50px;
-                        width: 50px;
-                        border: 1px solid #ededed;
-                        border-radius: 4px;
-                        margin: 0 30px 0 20px;
-                        cursor: pointer;
-                    }
-                    p:nth-of-type(1){
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                    p:nth-of-type(2){
-                        color: #666;
-                        opacity: .7;
-                        font-size: 12px;
-                    }
+            border-bottom: 1px solid #ededed;
+            td{
+                padding: 20px 0;
+
+            }
+            td:nth-of-type(1){
+                span:nth-of-type(1){
+                    font-weight: bold;
+                    cursor: pointer;    
                 }
-                &>p{
-                    margin-bottom: 0;
-                }
-                &>p:nth-of-type(1){
+                span:nth-of-type(2){
+                    
+                    width: 200px;
                     color: #666;
-                    margin-left: 100px;
+                    opacity: .7;
+                    font-size: 12px;
+               
                 }
-                &>p:nth-of-type(2){
-                    display: flex;
-                    margin-left: 66px;
-                    span:nth-of-type(2){
-                        padding: 0 10px 0 10px;
-                    }
-                    .reduce{
-                        display: block;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        background: url(../../img/icon-bg/cut.png);
-                        background-size: 20px 20px;
-                        cursor: pointer;
-                        &:hover{
-                            background-color: rgba(0,0,0,.15);
-                        }
-                    }
-                    .plus{
-                        display: block;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        background: url(../../img/icon-bg/puls.png);
-                        background-size: 20px 20px;
-                        cursor: pointer;
-                        &:hover{
-                            background-color: rgba(0,0,0,.15);
-                        }
-                    }
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border: 1px solid #ededed;
+                    border-radius: 4px;
+                    margin: 0 30px 0 20px;
+                    cursor: pointer;
                 }
-                &>p:nth-of-type(3){
-                    color: #666;
-                    margin-left: 60px;
+            }
+            td:nth-of-type(3){
+                .num{
+                    width: 40px;
+                    text-align: center;
+
                 }
-                &>p:nth-of-type(4){
-                    width: 18px;
-                    height: 18px;
-                    margin-left: 90px;
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    margin: 0;
+                }
+                .reduce{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
                     border-radius: 50%;
-                    background: url(../../img/icon-bg/del.png);
-                    background-size: 18px 18px;
+                    transform: translateY(25%);
+                    background: url(../../img/icon-bg/cut.png);
+                    background-size: 20px 20px;
                     cursor: pointer;
                     &:hover{
                         background-color: rgba(0,0,0,.15);
                     }
                 }
-
+                .plus{
+                    display: inline-block;
+                    width: 20px;
+                    transform: translateY(25%);
+                    height: 20px;
+                    border-radius: 50%;
+                    background: url(../../img/icon-bg/puls.png);
+                    background-size: 20px 20px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba(0,0,0,.15);
+                    }
+                }
             }
+            td:nth-of-type(5){
+                span{
+                    margin-left: 5px;
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background: url(../../img/icon-bg/del.png) no-repeat;
+                    background-size: 18px 18px;
+                    // background-position: 0px 0px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba(0,0,0,.15);
+                    }
+
+                }
+            }
+            
         }
         /* 结算 */
         .account{
@@ -145,8 +133,10 @@ section{
             }
             p:nth-of-type(3){
                 margin-left: 30px;
-                span{
+                .total{
                     color: red;
+                    display: inline-block;
+                    width: 60px;
                 }
             }
             button{
@@ -161,6 +151,8 @@ section{
         }
     }
 }
+
+
 
 
 

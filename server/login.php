@@ -4,10 +4,10 @@ $link = mysqli_connect('localhost','root','root','sys');
 mysqli_query($link,'set names utf8');
 $username = $_POST["username"];
 $password = $_POST["password"];
-$res = mysqli_query($link,"select * from user where username='$username'");
+$res = mysqli_query($link,"select * from sm_user where username='$username'");
 $row = mysqli_fetch_assoc($res);
 if ($row) {
-    $res = mysqli_query($link,"select * from user where username='$username' and password='$password'");
+    $res = mysqli_query($link,"select * from sm_user where username='$username' and password='$password'");
     $row = mysqli_fetch_assoc($res);
     if ($row) {
         $arr = [

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./order.css">
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar">
+        <div class="wrapper topbar">
+            <ul class="list">
+                <li class="active">在线商城</li>
+                <li>坚果Pro 3</li>
+                <li>坚果Pro 2S</li>
+                <li>TNT工作站</li>
+                <li>Smartisan OS</li>
+                <li>欢喜云</li>
+                <li>应用</li>
+                <li>论坛</li>
+                <li>加入我们</li>
+                <li>下载APP</li>
+            </ul>
+            <div class="info">
+                <div class="left">
+                    <span class="login"></span>
+                    <div class="logout">
+                        <div class="user">
+                            <img src="../../img/logo.JPG" alt="">
+                            <span>张三</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">我的订单</a>
+                            </li>
+                            <li>
+                                <a href="">售后服务</a>
+                            </li>
+                            <li>
+                                <a href="">我的优惠</a>
+                            </li>
+                            <li>
+                                <a href="">账户资料</a>
+                            </li>
+                            <li>
+                                <a href="">收货地址</a>
+                            </li>
+                            <li>
+                                <a href="">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 面板 -->
+    <div class="em"></div>
+    <div class="panel panel-default wrapper">
+        <div class="panel-heading">
+            <h3 class="panel-title">收货信息</h3>
+        </div>
+        <div class="panel-body">
+            <button type="button" class="btn btn-default">
+                <span>+</span>
+                <span>使用新地址</span>
+            </button>
+        </div>
+    </div>
+    <!-- 清单 -->
+    <div class="em"></div>
+    <div class="panel panel-default wrapper">
+        <div class="panel-heading">
+            <h3 class="panel-title">购物清单</h3>
+        </div>
+        <div class="panel-body">
+            <table>
+                <tr class="carttop">
+                    <th width='600'>&nbsp;&nbsp;商品信息</th>
+                    <th width='150'>单价</th>
+                    <th width='150'>数量</th>
+                    <th width='150'>应付金额</th>
+                    <!-- <th width='150'>操作</th> -->
+                </tr>
+                <tbody class="tb">
+
+                </tbody>
+                <tr class="product">
+                    <td>
+                        <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png" alt="">
+                        <span>坚果Pro 3</span>&nbsp;&nbsp;
+                        <span>黑色 | 8G + 128GB</span>
+                    </td>
+                    <td>
+                        <span>￥2399</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>￥2399</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- 发票信息 -->
+    <div class="em"></div>
+    <div class="panel panel-default wrapper">
+        <div class="panel-heading">
+            <h3 class="panel-title">发票信息</h3>
+        </div>
+        <div class="panel-body invoice">
+            <p>发票类型：<span>电子发票</span></p>
+            <p>发票抬头：
+                <input type="radio" name="invoice" id="" checked>个人
+                <input type="radio" name="invoice" id="">单位
+            </p>
+            <p>发票内容：<span>购买商品明细</span></p>
+            <div>
+                *电子发票是税务局认可的有效付款凭证，可作为售后服务凭据，电子发票打印后可以用于企业报销。
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 优惠券 -->
+    <div class="em"></div>
+    <div class="panel panel-default wrapper">
+        <div class="panel-heading">
+            <h3 class="panel-title">优惠券</h3>
+        </div>
+        <div class="panel-body" style="text-align: center;color: #666;">
+            <span style="font: 20px/60px ''">暂无优惠券</span>
+        </div>
+    </div>
+    <!-- 结算导航 -->
+    
+    <nav class="navbar navbar-default navbar-fixed-bottom navfoot">
+        <div class="container">
+            <div class="wrapper list">
+                <ul>
+                    <li>商品件数<div>1</div></li>
+                    <li>商品总价<p>￥ <span>199.00</span> </p>
+                    </li>
+                    <li>活动优惠<p>-￥ <span>0.00</span> </p>
+                    </li>
+                    <li>优惠券抵扣<p>-￥ <span>0.00</span> </p>
+                    </li>
+                    <li>运费<p>￥<span>0.00</span> </p>
+                    </li>
+                </ul>
+                <div class="sub">
+                    <div>
+                        应付总额：
+                        <p>
+                            ￥
+                            <span>199.00</span>
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        提交订单
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

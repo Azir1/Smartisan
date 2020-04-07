@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>购物车</title>
     <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="./shoppingcart.css">
 </head>
@@ -63,58 +64,52 @@
         <div class='em'></div>
         <div class="wrap">
             <h3>购物清单</h3>
-            <ul class="carttop">
-                <li>商品信息</li>
-                <li>单价</li>
-                <li>数量</li>
-                <li>小计</li>
-                <li>操作</li>
-            </ul>
-            <ul class="product">
-                <li>
-                    <div>
+            <table>
+                <tr class="carttop">
+                    <th width='600'>&nbsp;&nbsp;商品信息</th>
+                    <th width='150'>单价</th>
+                    <th width='150'>数量</th>
+                    <th width='150'>小计</th>
+                    <th width='150'>操作</th>
+                </tr>
+                <tbody class="tb">
+
+                </tbody>
+                <!-- <tr class="product">
+                    <td>
                         <input type="checkbox">
                         <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png?x-oss-process=image/resize,w_173/format,webp"
                             alt="">
-                        <p>坚果Pro 3</p>&nbsp;&nbsp;
-                        <p>黑色 | 8G + 128GB</p>
-                    </div>
-                    <p>￥2399</p>
-                    <p>
-                        <span class="reduce"></span>
-                        <span>1</span>
-                        <span class="plus"></span>
-                    </p>
-                    <p>￥2399</p>
-                    <p></p>
-                </li>
-                <li>
-                    <div>
-                        <input type="checkbox">
-                        <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png?x-oss-process=image/resize,w_173/format,webp"
-                            alt="">
-                        <p>坚果Pro 3</p>&nbsp;&nbsp;
-                        <p>黑色 | 8G + 128GB</p>
-                    </div>
-                    <p>￥2399</p>
-                    <p>
-                        <span class="reduce"></span>
-                        <span>1</span>
-                        <span class="plus"></span>
-                    </p>
-                    <p>￥2399</p>
-                    <p></p>
-                </li>
-            </ul>
+                        <span>坚果Pro 3</span>&nbsp;&nbsp;
+                        <span>黑色 | 8G + 128GB</span>
+                    </td>
+                    <td>
+                        <span>￥2399</span>
+                    </td>
+                    <td>
+                            <span class="reduce"></span>
+                            <span>1</span>
+                            <span class="plus"></span>
+                    </td>
+                    <td>
+                        <span>￥2399</span>
+                    </td>
+                    <td>
+                        <span></span>
+                    </td> 
+                </tr> -->
+
+            </table>
+        
             <div class="account">
                 <input type="checkbox" name="" id="">&nbsp;&nbsp;全选&nbsp;
-                <p>&nbsp;&nbsp;|&nbsp;&nbsp; 删除选中的商品</p>
+                <p class="delAll">&nbsp;&nbsp;|&nbsp;&nbsp; 删除选中的商品</p>
                 <p>
-                    <span>已选择&nbsp;&nbsp;<i>2</i>&nbsp;&nbsp;件商品</span>
-                    <span>共计&nbsp;&nbsp;<i>2</i>&nbsp;&nbsp;件商品</span>
+                    <span>已选择&nbsp;&nbsp;<i class="selected"></i>&nbsp;&nbsp;件商品</span>
+                    <span>共计&nbsp;&nbsp;<i class="all"></i>&nbsp;&nbsp;件商品</span>
                 </p>
-                <p>应付总额：<span>￥2399.00</span></p>
-                <button>现在结算</button>
+                <p>应付总额：<span class="total"></span></p>
+                <button class="account">现在结算</button>
             </div>
         </div>
         <div class='em'></div>
@@ -159,5 +154,9 @@
         </div>
     </footer>
 </body>
+<script src="../../js//jquery.min.js"></script>
+<script src="../../js//cookie.js"></script>
+<script src="../../js/nav.js"></script>
+<script src="./shoppingcart.js"></script>
 
 </html>
