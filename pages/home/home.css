@@ -91,8 +91,8 @@ header .wrapper .search .message span {
   flex-wrap: wrap;
 }
 .main .card ul li {
-  width: 238px;
-  height: 330px;
+  width: 240px;
+  height: 360px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding-top: 40px;
@@ -121,9 +121,6 @@ header .wrapper .search .message span {
 .main .card ul li img {
   width: 236;
   height: 220px;
-}
-.main .card ul li .price {
-  padding-top: 20px;
 }
 .main .card ul li .price span {
   color: red;

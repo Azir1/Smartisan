@@ -137,6 +137,7 @@ section .wrap .account button {
   border: 1px solid #3d60dc;
   border-radius: 4px;
   margin-left: 20px;
+  padding-left: 12px;
 }
 
 /*# sourceMappingURL=shoppingcart.css.map */

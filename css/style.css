@@ -73,10 +73,11 @@
   display: none;
 }
 .navbar .info .logout {
-  height: 350px;
+  height: 370px;
   background: #666;
   position: absolute;
   background: #fff;
+  overflow: hidden;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -184,8 +185,8 @@
   align-items: center;
 }
 .navbar .info .shoppingcart .product li img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   border: 1px solid #d6d6d6;
   margin: 0 10px 0 15px;
 }

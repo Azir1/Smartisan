@@ -62,7 +62,6 @@ $(function () {
                     let id = $(this).parent().parent().attr('id')
                     location.href = `../product/product.html?id=${id}`
                 })
-                console.log()
                 // 全选操作
                 $('[type="checkbox"]').last().click(()=>{
                     if ($('[type="checkbox"]').last().prop('checked')) {
@@ -122,14 +121,11 @@ $(function () {
                 $('.del').click(function(){
                     var res = $(this).parent().parent().attr('id')
                     let data2 = JSON.parse(localStorage.getItem('data'))
-                    // var data1 = JSON.parse(localStorage.getItem('data'))
-                    // console.log(data1)
                     var index = data2.findIndex(item=>{
                         return item.id == res
                     })
                     data2.splice(index,1)
                     localStorage.setItem('data',JSON.stringify(data2))
-                    console.log(index)
                     // 直接在这里删除元素，不需要刷新页面
                     $(this).parent().parent().remove()
                     let data3 = localStorage.getItem('data')
@@ -160,9 +156,25 @@ $(function () {
                         total()
                     })
                 })
-                // 去结算
-                $('.account').click(function(){
-                    location.href = '../order/order.html'
+                // 去结算+选择的id
+                $('.account button').click(function(){
+                    var arr = Array.from($('.check'));
+                    var res = arr.filter((item)=>{
+                        return $(item).prop('checked') 
+                    })
+                    var id = res.map(item=>{
+                        return $(item).parent().parent().attr('id')
+                    })
+                    if (id.length==0) {
+                        layer.msg('您还没选择任何商品');
+                        return false;
+                    }
+                    var str = ''
+                    for (let j = 0; j < id.length; j++) {
+                        str += `id=${id[j]}&` ;
+                    }
+                    str = str.substr(0,str.length-1)
+                    location.href = '../order/order.html?'+str
                 })
             }
         });

@@ -32,8 +32,13 @@ $(function () {
             // 点击进入详情页
             $('.card li').click(function () {
                 var id = $(this).attr('index')
-                console.log(id)
-                location.href = '../product/product.html' + '?id=' + id
+                var index= layer.load(1, {
+                    shade: [0.1,'#fff'] //0.1透明度的白色背景
+                })
+                setTimeout(()=>{
+                    layer.close(index);
+                    location.href = '../product/product.html' + '?id=' + id
+                },700)
             })
             // 滚动导航栏固定
             // 滚动条事件节流

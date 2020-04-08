@@ -56,7 +56,11 @@
             display: none;
         }
         .logout{
-            height: 370px;background: #666;position: absolute;    background: #fff;
+            height: 370px;
+            background: #666;
+            position: absolute;    
+            background: #fff;
+            overflow: hidden;
             border: 1px solid #d6d6d6;
             border-radius: 8px;
             -webkit-box-shadow: 0 20px 40px rgba(0,0,0,.15);
@@ -131,7 +135,7 @@
             .product{
                 li{
                     height: 100px;border-bottom: 1px solid #d6d6d6;display: flex;align-items: center;
-                    img{height: 70px;width: 70px;border: 1px solid #d6d6d6;margin:0 10px 0 15px;}
+                    img{height: 50px;width: 50px;border: 1px solid #d6d6d6;margin:0 10px 0 15px;}
                     h4{font: 14px/18px '';}
                     p:nth-of-type(1){color: #cccccf;font-size: 12px;}
                     p:nth-of-type(2) span:nth-of-type(1){

@@ -143,7 +143,9 @@ $(function () {
                     location.href = '../login/login.html'
                     return false
                 }
-                var ii = layer.load();
+                var ii = layer.load(1, {
+                    shade: [0.1,'#fff'] //0.1透明度的白色背景
+                })
                 setTimeout(() => {
                     layer.close(ii);
                     location.href = '../shoppingcart/shoppingcart.html';
