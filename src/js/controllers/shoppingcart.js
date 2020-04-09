@@ -15,7 +15,8 @@ $(function () {
         var id = arr.join(',')//数组分割 1,2,3
         $.ajax({  //得到id后发请求
             type: "post",
-            url: "../server/shoppingcart.php",
+            // url: "../server/shoppingcart.php",
+            url: "/shoppingcart",
             data: {
                 id: id
             },

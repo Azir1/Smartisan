@@ -14,7 +14,8 @@ $(function(){
     // 发送ajax请求
     $.ajax({
         type: "post",
-        url: "../server/order.php",
+        // url: "../server/order.php",
+        url: "/order",
         data: {
             id:id
         },

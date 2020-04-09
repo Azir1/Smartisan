@@ -38,7 +38,8 @@ $(function(){
         id = id.join(',')
         $.ajax({
             type: "post",
-            url: "../server/nav.php",
+            // url: "../server/nav.php",
+            url: "/nav",
             data: {
                 id:id
             },

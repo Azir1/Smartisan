@@ -64,7 +64,8 @@ $(function () {
         var username = document.querySelector("[name='username']").value.trim()
         var password = document.querySelector("[name='password']").value.trim()
         ajax({
-            url: '../server/register.php',
+            // url: '../server/register.php',
+            url: '/register',
             data: {
                 username: username,
                 password: password

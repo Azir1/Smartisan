@@ -13,7 +13,8 @@ $(function () {
     var id = res.split('=')[1]
     $.ajax({
         type: "post",
-        url: "../server/product.php",
+        // url: "../server/product.php",
+        url: "/product",
         data: {
             id: id
         },
@@ -169,10 +170,10 @@ $(function () {
                         id: id,
                         num: num
                     }
-                    arr.push(obj)
-                    str = JSON.stringify(arr)
+                    arr.push(obj);
+                    var str = JSON.stringify(arr);
                     // 存数据
-                    localStorage.setItem('data', str)
+                    localStorage.setItem('data', str);
                 } else { // 本地储存有数据
                     //这条数据，本地储存中是否存在
                     let res = JSON.parse(data)
@@ -189,9 +190,9 @@ $(function () {
                         res.push(obj)
                     } else {
                         // 这条数据存在
-                        res[index].num += num
+                        res[index].num += num;
                     }
-                    localStorage.setItem('data', JSON.stringify(res))
+                    localStorage.setItem('data', JSON.stringify(res));
                 }
                 layer.msg('添加成功');
             })

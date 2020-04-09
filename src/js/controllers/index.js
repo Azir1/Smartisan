@@ -6,7 +6,8 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "../server/home.php",
+        // url: "../server/home.php",
+        url: "/home",
         // data: "json",
         dataType: "json",
         success: function (response) {

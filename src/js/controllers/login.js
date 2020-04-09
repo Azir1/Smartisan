@@ -52,7 +52,8 @@ $(function () {
         var password = document.querySelector("[name='password']").value.trim()
 
         ajax({
-            url: '../server/login.php',
+            // url: '../server/login.php',
+            url: '/login',
             data: {
                 username: username,
                 password: password
