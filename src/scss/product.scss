@@ -1,0 +1,226 @@
+
+// 商品详情
+section{
+    background: #ededed;
+    .em{
+        height: 30px;
+    }
+    .wrap{
+        width: 960px;
+        margin:0px auto;
+        background: #fff;
+        border: 1px solid #ededed;
+        border-radius: 10px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .img-list{
+            height: 600px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            .active{
+                border: 2px solid #d6d6d6;
+            }
+            img{
+                width: 62px;
+                height: 62px;
+                border: 1px solid #efefef;
+                cursor: pointer;
+            }
+        }
+        .bigimg{
+            img{
+                width: 423px;
+                height: 423px;
+            }
+        }
+        .info{
+            padding: 60px 10px;
+            li{
+                border-bottom: 1px solid #d6d6d6;
+                width: 410px;
+            }
+            
+            li:first-child{
+                p:nth-of-type(1){
+                    font-size: 20px;
+                    width: 260px;
+                }
+                p:nth-of-type(2){
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        color: #666;
+                    }
+                    :last-child{
+                        color: red;
+                        font-size: 20px;
+                    }
+                }
+            }
+            @mixin li {
+                height: 88px;
+                display: flex;
+                align-items: center;
+                h4{
+                    width: 60px;
+                    color: #666;
+                    font-size: 14px;
+                }
+                span{
+                    border: 1px solid #efefef;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+            }
+            li:nth-of-type(2){
+                @include li
+            }
+            li:nth-of-type(3){
+                @include li
+            }
+            li:nth-of-type(4){
+                div{
+                    padding: 20px 0;
+                    .num{
+                    width: 40px;
+                    text-align: center;
+                    border: none;
+                    margin: 0 10px;
+                    }
+                    
+                    .reduce{
+                        display: inline-block;
+                        width: 20px;
+                        height: 22px;
+                        border-radius: 50%;
+                        transform: translateY(25%);
+                        background: url(../img/icon-bg/cut.png);
+                        background-size: 20px 20px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: rgba(0,0,0,.15);
+                        }
+                    }
+                    .plus{
+                        display: inline-block;
+                        width: 20px;
+                        transform: translateY(25%);
+                        height: 22px;
+                        border-radius: 50%;
+                        background: url(../img/icon-bg/puls.png);
+                        background-size: 20px 20px;
+                        margin: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: rgba(0,0,0,.15);
+                        }
+                    }
+                }
+                
+                @include li
+            }
+            li:nth-of-type(5){
+                i{
+                    margin-left: 30px;
+                    color: #333333;
+                }
+                @include li
+                
+            }
+        
+        }
+    }
+}
+// 商品详情
+.main{
+    // margin-bottom: 30px;
+    .card{
+        h3{
+            height: 45px;
+            background: #fafafa;
+            font:14px/45px '';
+            color: #666666;
+            padding-left: 20px;
+            font-weight: bolder;
+            margin-bottom: 0;
+            border-radius: 5px;
+            img{
+                width: 960px;
+            }
+        }
+        // ul{
+            
+        // }
+    }
+}
+// 购物车菜单
+.bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fafafa;
+    border-top: 1px solid #d6d6d6;
+    padding: 10px 0;
+    .wrap{
+        width: 960px;
+        margin:0px auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            margin-bottom: 0;
+        }
+        :first-child{
+            display: flex;
+            color: #666;
+            font-size: 14px;
+            p:nth-of-type(1){
+                font-weight: bold;
+                
+            }
+        }
+        :last-child{
+            display: flex;
+            align-items: center;
+            p{
+                color: red;
+                font-size: 16px;
+            }
+            button:nth-of-type(1){
+                background: #efefef;
+                width: 84px;
+                height: 35px;
+                border: 1px solid #d6d6d6;
+                border-radius: 4px;
+                margin-left: 20px;
+                outline: none;
+                // outline-color: rgba(255,255,255,0);
+            }
+            button:nth-of-type(2){
+                width: 84px;
+                height: 35px;
+                background: #5d85e5;
+                color: #fff;
+                border: 1px solid #3d60dc;
+                border-radius: 4px;
+                margin-left: 20px;
+                outline: none;
+                padding-right: 80px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

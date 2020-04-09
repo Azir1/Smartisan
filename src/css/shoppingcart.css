@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* 购物车 */
+section {
+  background: #ededed;
+  width: 100%;
+  padding-bottom: 30px;
+}
+section .em {
+  height: 30px;
+}
+section .wrap {
+  width: 960px;
+  margin: 0px auto;
+  background: #fff;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  padding: 0 20px;
+  /* 表头 */
+  /* 商品 */
+  /* 结算 */
+}
+section .wrap h3 {
+  height: 44px;
+  margin: 0;
+  font: 18px/44px "";
+  border-bottom: 1px solid #ededed;
+}
+section .wrap .carttop {
+  height: 30px;
+  background: #d6d6d6;
+  color: #333333;
+  opacity: 0.5;
+}
+section .wrap .product {
+  border-bottom: 1px solid #ededed;
+}
+section .wrap .product td {
+  padding: 20px 0;
+}
+section .wrap .product td:nth-of-type(1) span:nth-of-type(1) {
+  font-weight: bold;
+  cursor: pointer;
+}
+section .wrap .product td:nth-of-type(1) span:nth-of-type(2) {
+  width: 200px;
+  color: #666;
+  opacity: 0.7;
+  font-size: 12px;
+}
+section .wrap .product td:nth-of-type(1) img {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  margin: 0 30px 0 20px;
+  cursor: pointer;
+}
+section .wrap .product td:nth-of-type(3) .num {
+  width: 40px;
+  text-align: center;
+}
+section .wrap .product td:nth-of-type(3) input::-webkit-outer-spin-button,
+section .wrap .product td:nth-of-type(3) input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+section .wrap .product td:nth-of-type(3) .reduce {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: url(../img/icon-bg/cut.png);
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+section .wrap .product td:nth-of-type(3) .reduce:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+section .wrap .product td:nth-of-type(3) .plus {
+  display: inline-block;
+  width: 20px;
+  transform: translateY(25%);
+  height: 20px;
+  border-radius: 50%;
+  background: url(../img/icon-bg/puls.png);
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+section .wrap .product td:nth-of-type(3) .plus:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+section .wrap .product td:nth-of-type(5) span {
+  margin-left: 5px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: url(../img/icon-bg/del.png) no-repeat;
+  background-size: 18px 18px;
+  cursor: pointer;
+}
+section .wrap .product td:nth-of-type(5) span:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+section .wrap .account {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+section .wrap .account p {
+  margin-bottom: 0;
+}
+section .wrap .account p:nth-of-type(1) {
+  color: #666;
+  cursor: pointer;
+}
+section .wrap .account p:nth-of-type(2) {
+  display: flex;
+  flex-flow: column;
+  margin-left: 360px;
+}
+section .wrap .account p:nth-of-type(3) {
+  margin-left: 30px;
+}
+section .wrap .account p:nth-of-type(3) .total {
+  color: red;
+  display: inline-block;
+  width: 60px;
+}
+section .wrap .account button {
+  width: 84px;
+  height: 35px;
+  background: #5d85e5;
+  color: #fff;
+  border: 1px solid #3d60dc;
+  border-radius: 4px;
+  margin-left: 20px;
+  padding-left: 12px;
+}
+
+/*# sourceMappingURL=shoppingcart.css.map */
